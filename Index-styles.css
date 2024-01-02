@@ -1,0 +1,163 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF; /* Azul destaque */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #0056b3; /* Azul mais escuro */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-section,
+.training-plans-section,
+.gallery-section,
+.contact-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 0px; /* Remova o margin-top nesta linha */
+}
+
+.services,
+.contact-form,
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service,
+.training-plan,
+.gallery-image {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex: 1;
+}
+
+.service:hover,
+.training-plan:hover,
+.gallery-image:hover {
+    transform: translateY(-5px);
+}
+
+.service img,
+.gallery-image img {
+    max-width: 100%;
+    height: 300px; /* Altura fixa para todas as imagens dentro de .service */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service h3,
+.training-plan h3,
+.gallery-image h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service p,
+.training-plan p,
+.gallery-image p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.training-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.training-plan {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.training-plan:hover {
+    transform: translateY(-5px);
+}
+
+.training-plan img {
+    max-width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens dentro de .training-plan */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.training-plan h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.training-plan p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.price-basic {
+    background-color: #d4edda; /* Fundo verde claro */
+    border: 1px solid #c3e6cb; /* Borda verde mais escura */
+    color: #155724; /* Texto verde escuro */
+}
+
+.price-premium {
+    background-color: #cce5ff; /* Fundo azul claro */
+    border: 1px solid #b8daff; /* Borda azul mais escura */
+    color: #004085; /* Texto azul escuro */
+}
+
+.price-ultimate {
+    background-color: #f8d7da; /* Fundo vermelho claro */
+    border: 1px solid #f5c6cb; /* Borda vermelha mais escura */
+    color: #721c24; /* Texto vermelho escuro */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
